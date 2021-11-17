@@ -12,7 +12,7 @@
     "url": "https://github.com/Unleash/unleash-event-validator/issues"
   },
   "scripts": {
-    "build": "tsc --resolveJsonModule index.ts",
+    "build": "tsc --pretty",
     "clean": "rm index.js index.d.js"
   },
   "engines": {
@@ -25,5 +25,8 @@
   "devDependencies": {
     "@types/node": "16.11.7",
     "typescript": "4.4.4"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
