@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "lib": [
+      "ES6"
+    ],
+    "target": "es2020",                                     /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "module": "CommonJS",
+    "declaration": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
+  },
+  "exclude": ["node_modules"]
+}
