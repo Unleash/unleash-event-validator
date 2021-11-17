@@ -1,7 +1,7 @@
 {
   "name": "unleash-event-validator",
   "description": "AJV validation for unleash event schemas",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "main": "dist/index.js",
   "license": "Apache-2.0",
   "repository": {
