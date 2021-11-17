@@ -54,7 +54,7 @@ export interface IUnleashEvent {
     appName?: string;
     remoteAddr?: string;
     remoteHost?: string;
-    properties?: {
+    extraProps?: {
       [k: string]: string;
     }[];
   };
@@ -158,16 +158,17 @@ export const unleashSchema: JSONSchemaType<IUnleashEvent> = {
           type: "string",
           nullable: true,
         },
-        properties: {
+        extraProps: {
           type: "array",
-          required: [],
           items: {
             type: "object",
             additionalProperties: {
               type: "string",
             },
             required: [],
+            nullable: false,
           },
+          minItems: 0,
           nullable: true,
         },
       },
@@ -175,5 +176,3 @@ export const unleashSchema: JSONSchemaType<IUnleashEvent> = {
   },
 };
 export const validator = ajv.compile(unleashSchema);
-
-export default validator;
