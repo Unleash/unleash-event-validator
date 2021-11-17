@@ -1,0 +1,21 @@
+{
+  "name": "unleash-event-validator",
+  "description": "AJV validation for unleash event schemas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com:unleash/unleash-event-validator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Unleash/unleash-event-validator/issues"
+  },
+  "engines": {
+    "node": ">= 14"
+  },
+  "dependencies": {
+    "ajv": "^8.8.1",
+    "ajv-formats": "^2.1.1"
+  }
+}
