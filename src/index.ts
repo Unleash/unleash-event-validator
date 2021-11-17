@@ -1,8 +1,8 @@
 import Ajv2020, { JSONSchemaType } from "ajv/dist/2020";
-import formats from "ajv-formats";
+import addFormats from "ajv-formats";
 const ajv = new Ajv2020({ allErrors: true, parseDate: true });
 
-formats.addFormats(ajv);
+addFormats(ajv);
 
 export interface IUnleashEvent {
   /**
