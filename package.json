@@ -1,7 +1,7 @@
 {
   "name": "unleash-event-validator",
   "description": "AJV validation for unleash event schemas",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "index.js",
   "license": "Apache-2.0",
   "repository": {
@@ -12,7 +12,7 @@
     "url": "https://github.com/Unleash/unleash-event-validator/issues"
   },
   "scripts": {
-    "build": "tsc index.ts",
+    "build": "tsc --resolveJsonModule index.ts",
     "clean": "rm index.js index.d.js"
   },
   "engines": {
